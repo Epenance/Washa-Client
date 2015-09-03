@@ -9,6 +9,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css css/vendor.css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
@@ -19,7 +20,6 @@
 
     <!-- build:js js/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <!-- endbuild -->
   </head>
   <body>
@@ -30,7 +30,7 @@
     <nav id="mainNav">
 
       <div class="mobile-nav">
-        <img src="images/mobile_nav.png" height="25" alt=""/>
+        <img src="images/MobileNav.png" height="25" alt="Mobile Nav"/>
       </div>
 
       <a href="#"><img src="images/WashaLogo.png" alt="Washa Logo"/></a>
@@ -51,66 +51,42 @@
       <div class="container">
         <div class="row text-center">
           <div class="md-col-12">
-            <h1>Hej Karim, velkommen til dit Washa!</h1>
-            <p class="subtitle">Her kan du følge med i dine bestillinger, se tidligere ordrer og ændre dine oplysninger.</p>
+            <h1>Dine ordrer</h1>
+            <p class="subtitle">Herunder ser du en oversigt over dine ordrer. Hvis du har spørgsmål til din ordre, er du velkommen til at kontakte <a href="#">kundeservice.</a></p>
           </div>
         </div>
 
-        <div class="row text-center current-order">
-          <h2>Igangværende ordre (ID: 665544)</h2>
-          <h3>Oprettet d. 1/8 kl 17:43</h3>
+        <div class="row text-center current-orders">
           <ul>
-            <li class="completed">Ordre modtaget</li>
-            <li class="completed">Tøj afhentet</li>
-            <li class="active">Tøj vaskes</li>
-            <li>Tøj leveret</li>
+            <li class="active">
+              <p><strong>Iganværende ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
+              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
+            </li>
+            <li>
+              <p><strong>Afsluttet ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
+              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
+            </li>
+            <li>
+              <p><strong>Afsluttet ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
+              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
+            </li>
+            <li>
+              <p><strong>Afsluttet ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
+              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
+            </li>
+            <li>
+              <p><strong>Afsluttet ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
+              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
+            </li>
+            <li>
+              <p><strong>Afsluttet ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
+              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
+            </li>
           </ul>
-          <h3 class="delivery-eta">Levering forventes tirsdag kl 16:00</h3>
-          <a href="#">Se ordredetaljer</a>
         </div>
 
-        <div class="row news text-center">
-          <div class="col-md-12"><h2>Nyheder til dig</h2></div>
-          <div class="col-md-6">
-            <a href="#">
-              <img src="images/sample-content/news1.png" alt="Nyhed 1"/>
-              <h1>Washa tilbyder nu abonnementsordning</h1>
-              <span>20. august 2015</span>
-            </a>
-          </div>
-          <div class="col-md-6">
-            <a href="#">
-              <img src="images/sample-content/news2.png" alt="Nyhed 2"/>
-              <h1>Washa tilbyder nu abonnementsordning</h1>
-              <span>20. august 2015</span>
-            </a>
-          </div>
-          <div class="col-md-6">
-            <a href="#">
-              <img src="images/sample-content/news1.png" alt="Nyhed 1"/>
-              <h1>Washa tilbyder nu abonnementsordning</h1>
-              <span>20. august 2015</span>
-            </a>
-          </div>
-          <div class="col-md-6">
-            <a href="#">
-              <img src="images/sample-content/news2.png" alt="Nyhed 2"/>
-              <h1>Washa tilbyder nu abonnementsordning</h1>
-              <span>20. august 2015</span>
-            </a>
-          </div>
-        </div>
       </div>
     </main>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
     <!-- build:js js/vendor.js -->
     <!-- bower:js -->

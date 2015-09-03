@@ -1,0 +1,94 @@
+@import "variables";
+
+nav#mainNav {
+  background: $brand-color;
+  height: 100vh;
+  width: $menu-width;
+  float: left;
+  text-align: center;
+  padding-top:40px;
+  position:fixed;
+  top:0;
+  left:0;
+
+  .mobile-nav {
+    position:absolute;
+    left: 18px;
+    top: 17px;
+    cursor:pointer;
+    display:none;
+
+    @media screen and (max-width: $break-md) {
+      display:block;
+    }
+
+    img {
+      display:block;
+    }
+  }
+
+  @media screen and (max-width: $break-md) {
+    height:auto;
+    width:100%;
+    padding-top:60px;
+    z-index:100;
+
+    &:before {
+      position:absolute;
+      content:"";
+      display:block;
+      height:29px;
+      width:106px;
+      background:url(#{$image_src_path}/WashaLogoMobile.png) center center no-repeat;
+      background-size:cover;
+      top:14px;
+      left:calc(50% - 53px);
+    }
+
+    img, .cta-btn {
+      display:none;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    margin-top:50px;
+    width:100%;
+
+    @media screen and (max-width: $break-md) {
+      margin-top:0;
+      display:none;
+    }
+
+    li {
+      width:100%;
+
+      a {
+        display:block;
+        height:50px;
+        line-height:50px;
+        color:white;
+        text-decoration:none;
+
+        &:hover, &.active {
+          background:#2e8ccc;
+        }
+      }
+    }
+  }
+
+  .cta-btn {
+    position:absolute;
+    bottom:40px;
+    left:0;
+    width:100%;
+
+    .btn {
+      border-radius:15px;
+      padding: 7px 20px;
+      border:none;
+    }
+  }
+}

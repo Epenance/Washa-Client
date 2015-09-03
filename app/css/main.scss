@@ -1,6 +1,57 @@
 // bower:scss
 // endbower
+@import "fonts";
+@import "variables";
+@import "helpers";
+@import "navigation";
 
-body:before {
-  content: "I'm at 'app/css/main.scss";
+//Include subpages
+@import "subpages/oversigt";
+@import "subpages/orders";
+@import "subpages/single_order";
+
+body, html {
+  height:100%;
 }
+
+body {
+  background: #ffffff;;
+  font-family:$washa-font-family;
+}
+
+.container {
+  max-width:95%;
+}
+
+
+
+main {
+  float:left;
+  width:calc(100% - #{$menu-width});
+  padding:70px 0;
+  margin-left:$menu-width;
+
+  @media screen and (max-width: $break-md) {
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    float:none;
+  }
+
+  a {
+    color:$brand-color;
+  }
+
+  h1 {
+    font-weight:400;
+    font-size:36px;
+    margin-bottom:25px;
+  }
+
+  p.subtitle {
+    font-size:20px;
+    color:#666666;
+  }
+}
+
+

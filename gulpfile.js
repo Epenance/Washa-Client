@@ -78,7 +78,7 @@ gulp.task('javascript', function () {
     })
     .pipe(gulp.dest('dist/js'))
     .pipe($.sourcemaps.init())
-    // .pipe($.uglify())
+    .pipe($.uglify())
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('.tmp/js'));
 });
@@ -96,7 +96,7 @@ gulp.task('html', ['stylesheet'], function () {
 
   return gulp.src('app/*.html')
     .pipe(assets)
-    .pipe($.if('*.js', $.uglify()))
+    //.pipe($.if('*.js', $.uglify()))
     .pipe($.if('*.css', $.csso()))
     .pipe(assets.restore())
     .pipe($.useref())

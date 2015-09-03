@@ -9,6 +9,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css css/vendor.css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
@@ -19,7 +20,6 @@
 
     <!-- build:js js/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <!-- endbuild -->
   </head>
   <body>
@@ -30,7 +30,7 @@
     <nav id="mainNav">
 
       <div class="mobile-nav">
-        <img src="images/mobile_nav.png" height="25" alt=""/>
+        <img src="images/MobileNav.png" height="25" alt="Mobile Nav"/>
       </div>
 
       <a href="#"><img src="images/WashaLogo.png" alt="Washa Logo"/></a>
@@ -49,53 +49,35 @@
 
     <main>
       <div class="container">
-        <div class="row text-center">
-          <div class="md-col-12">
-            <h1>Dine ordrer</h1>
-            <p class="subtitle">Herunder ser du en oversigt over dine ordrer. Hvis du har spørgsmål til din ordre, er du velkommen til at kontakte <a href="#">kundeservice.</a></p>
-          </div>
-        </div>
 
-        <div class="row text-center current-orders">
+        <div class="row text-center single-order">
+          <div class="order-desc">
+            <h2>Ordre 665544</h2>
+            <h3>Herunder kan du følge status og se detaljer for din ordre.</h3>
+            <h4>24 stykker tøj <span class="sep">|</span> Pris 250,00 kr. <span class="sep">|</span> <span class="paid">Betalt</span></h4>
+          </div>
           <ul>
+            <li>
+              <h2>Ordre indsendt</h2>
+              <p>24 stykker tøj | 1. augh. 2015 kl 17.43</p>
+            </li>
+            <li>
+              <h2>Afhentet</h2>
+              <p>Washavej 11, 2900 Hellerup 1. aug. 2015 kl 17.43</p>
+            </li>
+            <li>
+              <h2>Ankommet</h2>
+              <p>Til Washa Vaskecenter 1. aug. 2015 kl 18.54</p>
+            </li>
             <li class="active">
-              <p><strong>Iganværende ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
-              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
-            </li>
-            <li>
-              <p><strong>Afsluttet ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
-              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
-            </li>
-            <li>
-              <p><strong>Afsluttet ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
-              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
-            </li>
-            <li>
-              <p><strong>Afsluttet ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
-              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
-            </li>
-            <li>
-              <p><strong>Afsluttet ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
-              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
-            </li>
-            <li>
-              <p><strong>Afsluttet ordre (ID: 665544)</strong> Oprettet d. 1/8 kl 17.43</p>
-              <a href="#" class="btn btn-primary">Se ordredetaljer</a>
+              <h2>Afleveret</h2>
+              <p>Washavej 11, 2900 Hellerup 2. aug. 2015 kl 19.32</p>
             </li>
           </ul>
         </div>
 
       </div>
     </main>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
     <!-- build:js js/vendor.js -->
     <!-- bower:js -->

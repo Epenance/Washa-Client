@@ -1,0 +1,45 @@
+.hide-sm {
+  @media screen and (max-width: $break-sm) {
+    display:none;
+  }
+}
+
+.hide-md {
+  @media screen and (max-width: $break-md) {
+    display:none;
+  }
+}
+
+.bottom-margin-40 {
+  margin-bottom:40px;
+}
+
+.top-padding-60 {
+  padding-top:60px;
+}
+
+.small-center-text {
+  max-width:680px;
+  margin:auto;
+}
+
+.page-headline {
+  h2 {
+    font-size:22px;
+    font-weight:bold;
+  }
+
+  p {
+    font-size:18px;
+    line-height:1.5;
+    font-weight:300;
+    color:#666666;
+  }
+}
+
+span.check {
+  display:inline-block;
+  width:25px;
+  height:25px;
+  background:url(#{$image_src_path}/content/abonnementer/check.png) center center no-repeat;
+}
