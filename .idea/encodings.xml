@@ -3,12 +3,15 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/.jshintrc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/css/_fonts.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/css/_helpers.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/css/_navigation.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/css/_variables.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/css/main.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/css/sprites/index.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/css/subpages/_oplysninger.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/css/subpages/_orders.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/css/subpages/_oversigt.scss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/css/subpages/_prisen.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/css/subpages/single_order.scss" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/js/main.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bower.json" charset="UTF-8" />

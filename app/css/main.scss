@@ -9,6 +9,8 @@
 @import "subpages/oversigt";
 @import "subpages/orders";
 @import "subpages/single_order";
+@import "subpages/prisen";
+@import "subpages/oplysninger";
 
 body, html {
   height:100%;
@@ -51,6 +53,20 @@ main {
   p.subtitle {
     font-size:20px;
     color:#666666;
+  }
+}
+
+.btn {
+  border-radius: 15px;
+  padding: 7px 20px;
+  border: none;
+
+  &.btn-primary {
+    background:$brand-color;
+
+    &:hover {
+      background:#286090;
+    }
   }
 }
 

@@ -16,6 +16,10 @@
 
 .top-padding-60 {
   padding-top:60px;
+
+  @media screen and (max-width: $break-md) {
+    padding-top:20px;
+  }
 }
 
 .small-center-text {
