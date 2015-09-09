@@ -45,7 +45,7 @@ gulp.task('sprites', function() {
       imgName: 'sprite_' + identifiers[i] + '.png',
       cssName: identifiers[i] + '..scss',
       imgPath: '../images/sprite_' + identifiers[i] + '.png',
-      cssFormat: 'sass'
+      cssFormat: 'scss'
     }));
 
     // Pipe image stream
